@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Trying out jekyll"
-date:   2017-07-20 06:39:34 +0000
+date:   2017-07-22 06:20:34 +0000
 categories: new blog
 ---
 
