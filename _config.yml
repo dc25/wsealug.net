@@ -17,8 +17,8 @@ title: Ben's Blog
 email: ben@benpatterson.io
 description: > # this means to ignore newlines until "baseurl:"
   Adventures in programming, learning and running in whatever order I feel like.
-baseurl: "resume/" # the subpath of your site, e.g. /blo
-url: "https://benruns.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blo
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: benruns
 github_username:  benruns
 # Build settings
