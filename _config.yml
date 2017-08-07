@@ -13,17 +13,24 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ben's Blog
-email: ben@benpatterson.io
+title: WSEALUG
 description: > # this means to ignore newlines until "baseurl:"
-  Adventures in programming, learning and running in whatever order I feel like.
+  Anyone who is interested in Linux and talking about it with your neighbors.
+  We have bi-weekly meet-ups and are currently meeting at the West Seattle &
+  Fauntleroy YMCA.
+
+  At each meeting we plan to have a 30 minute demonstration of something
+  GNU/Linux related. We are keeping track of these and suggestions on a
+  public Trello board: <a href="https://trello.com/b/duBE2Tpr/wsealug">https://trello.com/b/duBE2Tpr/wsealug</a>
+
+  Thanks for checking us out, and we hope to see you at the next meet up.
+
+  - WSeaLug Leadership Team!
 baseurl: "" # the subpath of your site, e.g. /blo
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: benruns
-github_username:  benruns
 # Build settings
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-minimal
 gems:
   - jekyll-feed
 

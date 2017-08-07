@@ -200,7 +200,7 @@ DEPENDENCIES
   github-pages (~> 143)
   jekyll (= 3.4.5)
   jekyll-feed (~> 0.6)
-  minima (~> 2.0)
+  jekyll-theme-minimal (~> 0.0.4)
   tzinfo-data
 
 BUNDLED WITH
