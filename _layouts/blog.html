@@ -1,0 +1,8 @@
+{% capture blog_content %}
+  {% for post in site.posts %}
+      <a href="{{ post.url  }}">{{ post.title }}</a>
+  {% endfor %}
+{% endcapture %}
+
+
+{% include wrapper.html blog_content=blog_content  %}
