@@ -13,8 +13,8 @@ about [jekyll here.](http://jekyllrb.com/)
 
 #### Quick set up
 
-    $ git clone  this repo #UPDATE
-    $ cd thisrepo #UPDATE
+    $ git clone git@github.com:BenRuns/wsealug.git
+    $ cd wsealug
     $ bundle install
     $ bundle exec jekyll serve
 
