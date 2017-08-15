@@ -36,28 +36,19 @@ TODO - write basic instructions
 - [meetup](https://www.meetup.com/)
 - [twitter](https://twitter.com/WSeaLUG)
 - [email](contact@wsealug.net)
+- [slack signup](https://wsealug-slack-signup.herokuapp.com/)
 
 
 ### TODO
 
-- add bootstrap
-- Add titles
-  - Events
-  - Blog
-  - Presentations
-  - Home
-  - Trello Board
-    - just a link
-- Add pages
-  - Events
-    - For now link to meetup
-  - blog
-    - put in some lorem ipsum
-  - Presentations
-  - Add Twitter feed to the front page
-  - Get existing assets
-    - need twitter, github and email assets
-  - Make the mascot svg
+- Add slack signup link
+- Add link to social media and meetup
+- Add initial meeting photo to about
+- Make the mascot svg
+- adjust styling and get opinion on design
+- discuss content(adding/removing/copy fixes) with other members
+- discuss CI strategy - potential experiments  - try to get it to work with own site
+- sneak in a seaslug on the site
 
 ### LATER
 
