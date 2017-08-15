@@ -1,0 +1,10 @@
+.logo-wrapper{
+  background-color: white;
+}
+.front-logo{
+  display: block;
+  margin: auto;
+}
+.main-content {
+  padding:30px;
+}
