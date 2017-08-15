@@ -1,4 +1,4 @@
-WSEALUG's homepage
+# WSEALUG's homepage
 
 ## Development
 The site uses jekyll, a static site generator. Learn more
@@ -11,7 +11,7 @@ about [jekyll here.](http://jekyllrb.com/)
    - you may have to install [rvm](http://rvm.io) to get it running
 2.  bundler `gem install bundler`
 
-#### Quick set up
+### Quick set up
 
     $ git clone git@github.com:BenRuns/wsealug.git
     $ cd wsealug
@@ -28,10 +28,20 @@ about [jekyll here.](http://jekyllrb.com/)
 
 
 ### Adding a blog entry
-TODO - write basic instructions
+- create a new file in the `_posts`  directory using the format YYYY-MM-DD-title.md (see other files in directory for examples of the header)
+- Write the entry in [markdown](https://daringfireball.net/projects/markdown/syntax)
+- If you're developing using `jekyll serve`, your post should be available locally immediately. If using gh-pages, it should be live once the changes are pushed to gh-pages branch on github
 
 
-### Resources
+### Development Resources
+
+- [jekyll](http://jekyllrb.com/)
+- [markdown](https://daringfireball.net/projects/markdown/syntax)
+- [liquid templating](https://shopify.github.io/liquid/)  
+- [bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+
+
+### WSEALUG Resoutces
 - [github](https://github.com/wsealug)
 - [meetup](https://www.meetup.com/)
 - [twitter](https://twitter.com/WSeaLUG)
