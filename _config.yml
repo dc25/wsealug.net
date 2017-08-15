@@ -17,7 +17,7 @@ title: WSEALUG - West Seattle Linux Users Group
 description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "/wsealug" # the subpath of your site, e.g. /blo
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://benruns.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 trello_board: https://trello.com/b/duBE2Tpr/wsealug
 markdown: kramdown
