@@ -1,0 +1,25 @@
+<div class="col-md-6 console col-sm-12" >
+  <div id="meetup-embed">
+
+  </div>
+
+  <script>
+  function loadMeetupData(response){
+      var $embed = $('#meetup-embed');
+      var nextMeetup = response.data[0];
+      var date = new Date(nextMeetup.time);
+      var venue = nextMeetup.venue;
+      var summary = '<h4>Next Event:</h4>'+
+      '<a href="'+ nextMeetup.link +'">'  +
+        '<ul>'+
+          '<li>'+ nextMeetup.name + '</li>'  +
+          '<li>' + date + '</li>' +
+          '<li>' + venue.name+ '</li>' +
+          '<li>' + venue.address_1 + '</li>' +
+          '<li>' + venue.city + ', ' + venue.state + ' ' + venue.zip + '</li>' +
+        '</ul>';
+      $embed.append(summary);
+    }
+  </script>
+  <script src="https://api.meetup.com/{{ site.meetup-name }}/events?callback=loadMeetupData" ></script>
+</div>

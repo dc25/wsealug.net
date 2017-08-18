@@ -1,0 +1,22 @@
+
+<div class="col-2 col-md-0 console">
+    <ul class='list-group'>
+     {% for link in site.nav %}
+
+        <a href="{{ link.url }}" class="list-group-item list-group-item-action">
+          {{ link.name }}
+        </a>
+
+     {% endfor %}
+   </ul>
+
+   <ul class='list-group'>
+    {% for media in site.social-media %}
+
+       <a href="{{ media[1]  }}" class="list-group-item list-group-item-action">
+         {{ media[0] | capitalize}}
+       </a>
+
+    {% endfor %}
+   </ul>
+</div>

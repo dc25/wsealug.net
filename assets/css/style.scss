@@ -1,0 +1,96 @@
+---
+---
+
+//colors
+$background: #f3f3f3;
+$console-background:#2C001E;
+$console-text: #CCCCCC;
+$console-link: #ffff00;
+$darkgreen: #006400;
+
+html {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background-color: $background;
+  height: 100%;
+
+}
+.wrapper{
+  min-height: 100%;
+}
+//NAVIGATION
+.lug-mobile-nav a{
+  color: $darkgreen!important;
+}
+
+
+//HEADER
+
+.front-logo{
+  display: block;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .lug-mobile-nav { display: none; }
+ }
+
+ //CONTENT
+
+ .console {
+   font-family:Courier;
+   color: $console-text;
+   background: $console-background;
+   border: 3px double #CCCCCC;
+   padding: 10px;
+ }
+
+ .console a{
+   font-family: inherit;
+   color: $console-link;
+   background-color: inherit;
+   padding-top:2px;
+   padding-bottom: 2px;
+ }
+ .readable{
+   color:black;
+ }
+ .readable a{
+   color: $darkgreen;
+ }
+
+ // Extra small devices (portrait phones, less than 576px)
+ // No media query since this is the default in Bootstrap
+
+ // Small devices (landscape phones, 576px and up)
+ @media (max-width: 576px) {
+   .col-sm-0{
+     display: none;
+   }
+ }
+
+ // Medium devices (tablets, 768px and up)
+ @media (max-width: 768px) {
+   .col-md-0{
+     display: none;
+
+    }
+  }
+
+
+//FOOTER
+.padding-some{
+  padding-top:10px;
+}
+
+//CONTENT
+.main-content {
+  padding:30px;
+}
+
+
+//SIDEBAR
+

@@ -2,13 +2,13 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: default
+layout: home
 title: Home
 ---
-Anyone who is interested in Linux and talking about it with your neighbors.
+This group is for anyone who is interested in Linux and talking about it with your neighbors.
 We have bi-weekly meet-ups and are currently meeting at the West Seattle &
 Fauntleroy YMCA. You can find out more information on our [meet-up](https://www.meetup.com/WSeaLUG/)
-page.
+page or join us on our [slack channel](https://wsealug-slack-signup.herokuapp.com/).
 
 At each meeting we have a 30 minute demonstration of something
 GNU/Linux related. We are keeping track of these and suggestions on a

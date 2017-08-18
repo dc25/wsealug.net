@@ -50,20 +50,18 @@ about [jekyll here.](http://jekyllrb.com/)
 
 
 ### TODO
-
-- Add slack signup link
-- Add link to social media and meetup
-- Add initial meeting photo to about
+- Move social media links under logo
+- Finish Pages
+  - News
+  - Events
+  - Past Presentations
+  - About
 - Make the mascot svg
 - adjust styling and get opinion on design
 - discuss content(adding/removing/copy fixes) with other members
-- discuss CI strategy - potential experiments  - try to get it to work with own site
 - sneak in a seaslug on the site
 
 ### LATER
 
 - Linux Resources page
 - Bio for organizers
-- Set up a google calender to link to for events (check integration with meetup)
-- Automatic deployment after merge to master with Circle CI, Travis?
-- Move this repo over to wsealug  organization
