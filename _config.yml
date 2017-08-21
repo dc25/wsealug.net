@@ -37,6 +37,19 @@ nav:
   - name: Code of Conduct
     url: https://github.com/wsealug/wsealug/blob/master/code_of_conduct.md
 
+
+meetup-name: wsealug
+
+social-media:
+  github: https://github.com/wsealug
+  meetup: https://www.meetup.com/WSeaLUG/
+  twitter: https://twitter.com/wsealug
+  slack: https://wsealug.slack.com/
+  email: mailto:contact@wsealug.net
+
+
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

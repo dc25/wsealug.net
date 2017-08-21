@@ -1,44 +1,80 @@
+{% if site.github.pages_env == 'development' %}
+    {% assign site_prefix = '' %}
+{% else %}
+   {% assign site_prefix = site.github.url %}
+{% endif %}
+
 <!doctype html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.js"
+       integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+       crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+      crossorigin="anonymous">
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous"
+      >
+     <link rel="stylesheet"
+          href="{{  site_prefix | append:'/assets/css/style.css?v=') | append: site.github.build_revision  }}">
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron logo-wrapper">
-        <div class='center-block'>
-          <img class='img-fluid front-logo' src="{{ '/assets/images/logo.jpeg' }}" alt="West Seattle Linux User Group"></img>
-        </div>
-      </div>
-      <div>
-      {% include navbar.html  %}
-      <div class="col-lg-8 main-content">
+    {% include mobile-navbar.html  %}
+    <div class="container col-lg-10 console wrapper">
+      <div class="row card-deck main-content">
+          <div class="col-md-6 col-sm-12 console">
+             <div class='center-block'>
+               <img class='img-fluid front-logo' src="{{ site_prefix }}/assets/images/logo.jpeg" alt="West Seattle Linux User Group"></img>
 
-            {{ content }}
+             </div>
+          </div>
+          {% include next-event.html %}
       </div>
-      {% if blog_content %}
-        {{ blog_content }}
-      {% endif %}
 
-      <footer class="footer">
-        <p>© WSEALUG 2017</p>
-      </footer>
+      <div class="row main-content card-deck">
+         {% include sidenav.html %}
+         {% if main_content %}
+           {{ main_content }}
+         {% else %}
+            <div class="col-lg-8 col-md-12 col-sm-12 card console">
+              <div class="card-body readable">
+
+                  {{ content }}
+
+              </div>
+            </div>
+        {% endif %}
+      </div>
+
+        <footer class="row main-content footer">
+            <div class="col-12 console">
+                <p>© WSEALUG 2017</p>
+            </div>
+            <div class="col-12 padding-some">
+               <p>$ _</p>
+            </div>
+       </footer>
     </div>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
   {% if site.google_analytics %}
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
