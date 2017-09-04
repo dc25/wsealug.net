@@ -2,11 +2,15 @@
 <div class="col-2 col-md-0 console">
     <ul class='list-group'>
      {% for link in site.nav %}
-
-        <a href="{{ link.url }}" class="list-group-item list-group-item-action" target="_blank">
-          {{ link.name }}
-        </a>
-
+        {% if link.url contains 'http' %}
+           <a href="{{ link.url }}" class="list-group-item list-group-item-action" target="_blank">
+              {{ link.name }}
+           </a>
+        {% else %}
+             <a href="{{ link.url }}" class="list-group-item list-group-item-action" >
+             {{ link.name }}
+            </a>
+        {% endif %}
      {% endfor %}
    </ul>
 
