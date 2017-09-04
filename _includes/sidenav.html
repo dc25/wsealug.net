@@ -3,7 +3,7 @@
     <ul class='list-group'>
      {% for link in site.nav %}
 
-        <a href="{{ link.url }}" class="list-group-item list-group-item-action">
+        <a href="{{ link.url }}" class="list-group-item list-group-item-action" target="_blank">
           {{ link.name }}
         </a>
 
@@ -13,7 +13,7 @@
    <ul class='list-group'>
     {% for media in site.social-media %}
 
-       <a href="{{ media[1]  }}" class="list-group-item list-group-item-action">
+       <a href="{{ media[1]  }}" class="list-group-item list-group-item-action" target="_blank">
          {{ media[0] | capitalize}}
        </a>
 
