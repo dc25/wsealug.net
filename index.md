@@ -10,10 +10,11 @@ We have bi-weekly meet-ups and are currently meeting at the West Seattle &
 Fauntleroy YMCA. You can find out more information on our [meet-up](https://www.meetup.com/WSeaLUG/)
 page or join us on our [slack channel](https://wsealug-slack-signup.herokuapp.com/).
 
-At each meeting we have a 30 minute demonstration of something
-GNU/Linux related. We are keeping track of these and suggestions on a
+At the meetings we either have a ['Lean-Coffee'](http://leancoffee.org/) style of a meeting, or one of our members will give a 30-45 minute demonstration of something GNU/Linux related. We are keeping track of these and suggestions on a
 public [Trello board](https://trello.com/b/duBE2Tpr/wsealug">https://trello.com/b/duBE2Tpr/wsealug).
+
+We will soon have records and slide-decks of past presentations, stay tuned!
 
 Thanks for checking us out, and we hope to see you at the next meet up.
 
-WSeaLug Leadership Team!
+WSeaLUG Leadership Team!
