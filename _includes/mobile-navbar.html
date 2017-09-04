@@ -7,12 +7,12 @@
     <ul class="navbar-nav mr-auto">
       {% for link in site.nav %}
         <li class="nav-item">
-          <a class="nav-link" href="{{ link.url }}">{{ link.name }}</a>
+          <a class="nav-link" href="{{ link.url }}" target="_blank" >{{ link.name }}</a>
         </li>
       {% endfor %}
       {% for media in site.social-media %}
          <li class="nav-item">
-           <a class="nav-link" href="{{ media[1] }}">{{ media[0] | capitalize }}</a>
+           <a class="nav-link" href="{{ media[1] }}" target="_blank" >{{ media[0] | capitalize }}</a>
          </li>
       {% endfor %}
     </ul>
