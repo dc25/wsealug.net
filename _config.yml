@@ -61,3 +61,11 @@ social-media:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - s3_website.yml
+  - circle.yml
+  - node_modules
