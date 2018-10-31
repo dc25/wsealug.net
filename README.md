@@ -13,12 +13,23 @@ about [jekyll here.](http://jekyllrb.com/)
 
 ### Quick set up
 
+#### Without a container
+
     $ git clone git@github.com:wsealug/wsealug.github.io.git
     $ cd wsealug.github.io
     $ bundle install
     $ bundle exec jekyll serve
 
-  Now browse to http://localhost:4000
+Now browse to http://localhost:4000
+
+#### Using Docker
+
+    $ git clone git@github.com:wsealug/wsealug.github.io.git
+    $ cd wsealug.github.io
+    $ docker build -t wsealug-website .
+    $ docker run --rm -it -p 127.0.0.1:4000:4000 --mount type=bind,src=$(pwd),dst=/usr/src/app wsealug-website
+
+Now browse to http://localhost:4000
 
 ### Contributing
 
@@ -41,9 +52,9 @@ about [jekyll here.](http://jekyllrb.com/)
 - [bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
 
-### WSEALUG Resoutces
+### WSEALUG Resources
 - [github](https://github.com/wsealug)
-- [meetup](https://www.meetup.com/)
+- [meetup](https://www.meetup.com/WSeaLUG/)
 - [twitter](https://twitter.com/WSeaLUG)
 - [email](contact@wsealug.net)
 - [slack signup](https://wsealug-slack-signup.herokuapp.com/)
@@ -58,7 +69,7 @@ about [jekyll here.](http://jekyllrb.com/)
   - About
 - Make the mascot svg
 - adjust styling and get opinion on design
-- discuss content(adding/removing/copy fixes) with other members
+- discuss content (adding/removing/copy fixes) with other members
 - sneak in a seaslug on the site
 
 ### LATER
