@@ -5,3 +5,4 @@ Dockerfile
 .git
 .gitignore
 s3_website.yml
+README.md
