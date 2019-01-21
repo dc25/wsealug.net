@@ -61,7 +61,7 @@ Now browse to http://localhost:4000
 
 
 ### TODO
-- Move social media links under logo
+- [Move social media links under logo](https://gitlab.com/wsealug/wsealug.net/issues/3)
 - Finish Pages
   - News
   - Events

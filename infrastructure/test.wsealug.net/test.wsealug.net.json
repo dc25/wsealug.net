@@ -1,0 +1,15 @@
+{
+    "StackName": "arch-test-wsealug-net",
+    "TemplateBody": "./static-site.yml",
+    "Parameters": [
+        {
+            "ParameterKey": "HostedZone",
+            "ParameterValue": "test.wsealug.net"
+        },
+        {
+            "ParameterKey": "Route53ZoneID",
+            "ParameterValue": "ZHQJC40P9CMNK"
+        }
+    ]
+}
+
