@@ -6,7 +6,7 @@ about [jekyll here.](http://jekyllrb.com/)
 
 ### Prerequisites
 
-1. Ruby 2.3
+1. Ruby >= 2.4.4
    - Check your system by typing in `ruby -v`
    - you may have to install [rvm](http://rvm.io) to get it running
 2.  bundler `gem install bundler`
