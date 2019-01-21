@@ -14,8 +14,10 @@ cache:
 buildJekyll:  # A job to build the static website - replace it with your build methods
   stage: build
   script:
+    - apt-get update
+    - apt-get install -y --no-install-recommends g++ make 
     - bundle install --path=vendor/
-    - bundle exec jekyll build --future # The server is in another timezone..
+    - bundle exec jekyll build 
   artifacts:
     paths:
       - _site/  # This is what we want to publish, replace with your `dist` directory
