@@ -17,7 +17,7 @@ title: WSEALUG - West Seattle Linux Users Group
 description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blo
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://wsealug.net" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 markdown: kramdown
 gems:
@@ -41,10 +41,10 @@ nav:
 meetup-name: wsealug
 
 social-media:
-  github: https://github.com/wsealug
   meetup: https://www.meetup.com/WSeaLUG/
-  twitter: https://twitter.com/wsealug
   slack: https://wsealug.slack.com/
+  twitter: https://twitter.com/wsealug
+  gitlab: https://gitlab.com/wsealug
   email: mailto:contact@wsealug.net
 
 
@@ -69,3 +69,5 @@ exclude:
   - s3_website.yml
   - circle.yml
   - node_modules
+  - Dockerfile
+  - README.md
