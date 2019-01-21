@@ -31,6 +31,6 @@ deploy:
     - pip install awscli # Install the SDK
   script:
     - aws s3 sync _site s3://$S3_BUCKET_NAME
-    #- aws s3 cp _site s3://${BUCKET_NAME} --recursive
-    #- aws s3 cp _site s3://${BUCKET_NAME}/${CI_COMMIT_REF_SLUG} --recursive # Replace example-bucket with your bucket
+  only:
+    - master
 
