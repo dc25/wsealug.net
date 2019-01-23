@@ -48,7 +48,5 @@ deploy-test:
     - aws s3 sync _site s3://$S3_BUCKET_NAME_TEST
     - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID_TEST --paths '/*'
     - echo "DEPLOYED SUCCESSFULLY TO TEST"
-  except:
-    - master
   tags:
     - testbuild
