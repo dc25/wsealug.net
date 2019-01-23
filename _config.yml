@@ -37,7 +37,6 @@ nav:
   - name: Code of Conduct
     url: https://github.com/wsealug/wsealug/blob/master/code_of_conduct.md
 
-
 meetup-name: wsealug
 
 social-media:
@@ -47,20 +46,9 @@ social-media:
   gitlab: https://gitlab.com/wsealug
   email: mailto:contact@wsealug.net
 
-
-
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 
 exclude:
   - vendor
@@ -71,3 +59,4 @@ exclude:
   - node_modules
   - Dockerfile
   - README.md
+  - infrastructure
