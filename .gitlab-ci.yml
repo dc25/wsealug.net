@@ -39,7 +39,7 @@ deploy:
 
 deploy-test:
   image: python:3.6-slim  # "python:latest"  # We use python because there is a well-working AWS Sdk
-  stage: deploy
+  stage: deploy-test
   dependencies:
     - buildJekyll      # We want to specify dependencies in an explicit way, to avoid confusion if there are different build jobs
   before_script:
@@ -50,3 +50,5 @@ deploy-test:
     - echo "DEPLOYED SUCCESSFULLY TO TEST"
   except:
     - master
+  tags:
+    - testbuild
