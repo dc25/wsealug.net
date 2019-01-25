@@ -49,6 +49,6 @@ deploy-test:
     - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID_TEST --paths '/*'
     - echo "DEPLOYED SUCCESSFULLY TO TEST"
   tags:
-    - /^testdeploy_.*$/
+    - testdeploy*
   only:
     - tags 
