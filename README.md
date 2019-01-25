@@ -36,6 +36,7 @@ Now browse to http://localhost:4000
 #### test.wsealug.net 
 
 push your branch changes up and then use a tag that includes `testdeploy` this will kick off a build and deploy to the test source S3 bucket in AWS.  i.e. 
+
 			git tag testdeploy_gitlab-ci_01 && git push origin testdeploy_gitlab-ci_01
 
 #### wsealug.net
