@@ -1,54 +1,28 @@
-image: ruby:2.4.4-slim  #"registry.gitlab.com/rpadovani/rpadovani.com:latest" # Custom Ruby image, replace with whatever you want
-stages:
-  - build
-  - deploy
-  - deploy-test
+image: ruby:2.3
 
-# variables:
-#  AWS_DEFAULT_REGION: us-west-2  # The region of our S3 bucket
-#  BUCKET_NAME: test.wsealug.net  # Your bucket name
+variables:
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
 
-cache:
-  paths:
-    - vendor
+before_script:
+  - bundle install
 
-buildJekyll:  # A job to build the static website - replace it with your build methods
-  stage: build
+test:
+  stage: test
   script:
-    - apt-get update
-    - apt-get install -y --no-install-recommends g++ make 
-    - bundle install --path=vendor/
-    - bundle exec jekyll build 
+  - bundle exec jekyll build -d test
   artifacts:
     paths:
-      - _site/  # This is what we want to publish, replace with your `dist` directory
+    - test
+  except:
+  - master
 
-deploy:
-  image: python:3.6-slim  # "python:latest"  # We use python because there is a well-working AWS Sdk
+pages:
   stage: deploy
-  dependencies:
-    - buildJekyll      # We want to specify dependencies in an explicit way, to avoid confusion if there are different build jobs
-  before_script:
-    - pip install awscli # Install the SDK
   script:
-    - aws s3 sync _site s3://$S3_BUCKET_NAME
-    - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/*'
-    - echo "DEPLOYED SUCCESSFULLY"
-  only:
-    - master
-
-deploy-test:
-  image: python:3.6-slim  # "python:latest"  # We use python because there is a well-working AWS Sdk
-  stage: deploy-test
-  dependencies:
-    - buildJekyll      # We want to specify dependencies in an explicit way, to avoid confusion if there are different build jobs
-  before_script:
-    - pip install awscli # Install the SDK
-  script:
-    - aws s3 sync _site s3://$S3_BUCKET_NAME_TEST
-    - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID_TEST --paths '/*'
-    - echo "DEPLOYED SUCCESSFULLY TO TEST"
-  tags:
-    - testdeploy
-  only:
-    - tags 
+  - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  # only:
+  # - master
