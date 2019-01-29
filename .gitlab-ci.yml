@@ -15,14 +15,17 @@ test:
     paths:
     - test
   except:
-  - master
+    - master
 
 pages:
   stage: deploy
   script:
-  - bundle exec jekyll build -d public
+    - bundle exec jekyll build -d public
   artifacts:
     paths:
     - public
-  # only:
-  # - master
+  only:
+    refs:
+      - master
+    variables:
+      - $CI_COMMIT_MESSAGE =~ /doBuild/
