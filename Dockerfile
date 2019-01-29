@@ -1,4 +1,4 @@
-FROM ruby:2.4.4-slim
+FROM ruby:slim
 
 # some gems need build tools
 RUN apt-get update \

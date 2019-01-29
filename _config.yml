@@ -17,7 +17,7 @@ title: WSEALUG - West Seattle Linux Users Group
 description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blo
-url: "https://wsealug.net" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 markdown: kramdown
 gems:
@@ -37,18 +37,30 @@ nav:
   - name: Code of Conduct
     url: https://github.com/wsealug/wsealug/blob/master/code_of_conduct.md
 
+
 meetup-name: wsealug
 
 social-media:
+  github: https://github.com/wsealug
   meetup: https://www.meetup.com/WSeaLUG/
-  slack: https://wsealug.slack.com/
   twitter: https://twitter.com/wsealug
-  gitlab: https://gitlab.com/wsealug
+  slack: https://wsealug.slack.com/
   email: mailto:contact@wsealug.net
+
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 
 exclude:
   - vendor
@@ -57,6 +69,3 @@ exclude:
   - s3_website.yml
   - circle.yml
   - node_modules
-  - Dockerfile
-  - README.md
-  - infrastructure
