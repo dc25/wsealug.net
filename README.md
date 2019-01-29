@@ -6,7 +6,7 @@ about [jekyll here.](http://jekyllrb.com/)
 
 ### Prerequisites
 
-1. Ruby 2.3
+1. Ruby >= 2.4.4
    - Check your system by typing in `ruby -v`
    - you may have to install [rvm](http://rvm.io) to get it running
 2.  bundler `gem install bundler`
@@ -31,6 +31,18 @@ Now browse to http://localhost:4000
 
 Now browse to http://localhost:4000
 
+### Deployments
+
+#### test.wsealug.net 
+
+push your branch changes up and then use a tag that includes `testdeploy` this will kick off a build and deploy to the test source S3 bucket in AWS.  i.e. 
+
+			git tag testdeploy_gitlab-ci_01 && git push origin testdeploy_gitlab-ci_01
+
+#### wsealug.net
+
+Push your branch changes up and submit a PR. Once the PR is approved GitlabCI will build and deploy to the source S3 bucket in AWS.
+
 ### Contributing
 
 1. Fork the repo
@@ -44,7 +56,7 @@ Now browse to http://localhost:4000
 - If you're developing using `jekyll serve`, your post should be available locally immediately. If using gh-pages, it should be live once the changes are pushed to gh-pages branch on github
 
 
-### Development Resources
+## Development Resources
 
 - [jekyll](http://jekyllrb.com/)
 - [markdown](https://daringfireball.net/projects/markdown/syntax)
@@ -52,7 +64,7 @@ Now browse to http://localhost:4000
 - [bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
 
-### WSEALUG Resources
+## WSEALUG Resources
 - [github](https://github.com/wsealug)
 - [meetup](https://www.meetup.com/WSeaLUG/)
 - [twitter](https://twitter.com/WSeaLUG)
@@ -60,8 +72,8 @@ Now browse to http://localhost:4000
 - [slack signup](https://wsealug-slack-signup.herokuapp.com/)
 
 
-### TODO
-- Move social media links under logo
+## TODO
+- [Move social media links under logo](https://gitlab.com/wsealug/wsealug.net/issues/3)
 - Finish Pages
   - News
   - Events
@@ -72,7 +84,7 @@ Now browse to http://localhost:4000
 - discuss content (adding/removing/copy fixes) with other members
 - sneak in a seaslug on the site
 
-### LATER
+## LATER
 
 - Linux Resources page
 - Bio for organizers
