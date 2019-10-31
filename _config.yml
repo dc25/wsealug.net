@@ -41,9 +41,9 @@ nav:
 meetup-name: wsealug
 
 social-media:
-  github: https://github.com/wsealug
-  meetup: https://www.meetup.com/WSeaLUG/
+  gitlab: https://gitlab.com/wsealug
   twitter: https://twitter.com/wsealug
+  gettogether: https://gettogether.community/wsealug/
   slack: https://wsealug.slack.com/
   email: mailto:contact@wsealug.net
 
