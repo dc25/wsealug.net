@@ -1,22 +1,28 @@
 # WSEALUG's homepage
 
+### Main repo located [https://gitlab.com/wsealug/wsealug.net](https://gitlab.com/wsealug/wsealug.net)
+
+### [https://github.com/wsealug/wsealug.github.io](https://github.com/wsealug/wsealug.github.io) is a mirror for hosting purpososes.
+
 ## Development
+
 The site uses jekyll, a static site generator. Learn more
 about [jekyll here.](http://jekyllrb.com/)
 
 ### Prerequisites
 
-1. Ruby 2.3
+1. Ruby 2.5.5
    - Check your system by typing in `ruby -v`
    - you may have to install [rvm](http://rvm.io) to get it running
-2.  bundler `gem install bundler`
+
+2. bundler `gem install bundler`
 
 ### Quick set up
 
 #### Without a container
 
-    $ git clone git@github.com:wsealug/wsealug.github.io.git
-    $ cd wsealug.github.io
+    $ git clone git@gitlab.com:wsealug/wsealug.net.git
+    $ cd wsealug.net
     $ bundle install
     $ bundle exec jekyll serve
 
@@ -24,8 +30,8 @@ Now browse to http://localhost:4000
 
 #### Using Docker
 
-    $ git clone git@github.com:wsealug/wsealug.github.io.git
-    $ cd wsealug.github.io
+    $ git clone git@gitlab.com:wsealug/wsealug.net.git
+    $ cd wsealug.net
     $ docker build -t wsealug-website .
     $ docker run --rm -it -p 127.0.0.1:4000:4000 --mount type=bind,src=$(pwd),dst=/usr/src/app wsealug-website
 
@@ -53,8 +59,8 @@ Now browse to http://localhost:4000
 
 
 ### WSEALUG Resources
-- [github](https://github.com/wsealug)
-- [meetup](https://www.meetup.com/WSeaLUG/)
+- [gitlab](https://gitlab.com/wsealug)
+- [gettogether](https://gettogether.community/wsealug/)
 - [twitter](https://twitter.com/WSeaLUG)
 - [email](contact@wsealug.net)
 - [slack signup](https://wsealug-slack-signup.herokuapp.com/)
