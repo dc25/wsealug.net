@@ -69,3 +69,4 @@ exclude:
   - s3_website.yml
   - circle.yml
   - node_modules
+  - Dockerfile
