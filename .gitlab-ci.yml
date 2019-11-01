@@ -1,4 +1,4 @@
-image: ruby:2.4.4-slim  #"registry.gitlab.com/rpadovani/rpadovani.com:latest" # Custom Ruby image, replace with whatever you want
+image: ruby:2.5.5-slim  #"registry.gitlab.com/rpadovani/rpadovani.com:latest" # Custom Ruby image, replace with whatever you want
 stages:
   - build
   - deploy
