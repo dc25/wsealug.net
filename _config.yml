@@ -26,42 +26,24 @@ gems:
 nav:
   - name: Home
     url: /
-  # - name: About
-  #   url: /about
-  # - name: News
-  #   url: /news
-  # - name: Events
-  #   url: /events
-  - name: Trello
-    url: https://trello.com/b/duBE2Tpr/wsealug
   - name: Code of Conduct
     url: https://gitlab.com/wsealug/wsealug/blob/master/code_of_conduct.md
+  - name: GetTogether
+    url: https://gettogether.community/wsealug/
+  - name: IRC
+    url: https://webchat.freenode.net/#wsealug
+  - name: Slack
+    url: https://wsealug.slack.com/
+  - name: Gitlab
+    url: https://gitlab.com/wsealug
+  - name: Trello
+    url: https://trello.com/b/duBE2Tpr/wsealug
 
-
-meetup-name: wsealug
+#meetup-name: wsealug
 
 social-media:
-  gitlab: https://gitlab.com/wsealug
   twitter: https://twitter.com/wsealug
-  gettogether: https://gettogether.community/wsealug/
-  slack: https://wsealug.slack.com/
   email: mailto:contact@wsealug.net
-  IRC: https://webchat.freenode.net/#wsealug
-
-
-
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 
 exclude:
   - vendor
