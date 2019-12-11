@@ -37,16 +37,16 @@ deploy:
   only:
     - master
 
-deploy-test:
-  image: python:3.6-slim  # "python:latest"  # We use python because there is a well-working AWS Sdk
-  stage: deploy-test
-  dependencies:
-    - buildJekyll      # We want to specify dependencies in an explicit way, to avoid confusion if there are different build jobs
-  before_script:
-    - pip install awscli # Install the SDK
-  script:
-    - aws s3 sync _site s3://$S3_BUCKET_NAME_TEST
-    - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID_TEST --paths '/*'
-    - echo "DEPLOYED SUCCESSFULLY TO TEST"
-  except:
-    - master
+#deploy-test:
+#  image: python:3.6-slim  # "python:latest"  # We use python because there is a well-working AWS Sdk
+#  stage: deploy-test
+#  dependencies:
+#    - buildJekyll      # We want to specify dependencies in an explicit way, to avoid confusion if there are different build jobs
+#  before_script:
+#    - pip install awscli # Install the SDK
+#  script:
+#    - aws s3 sync _site s3://$S3_BUCKET_NAME_TEST
+#    - aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID_TEST --paths '/*'
+#    - echo "DEPLOYED SUCCESSFULLY TO TEST"
+#  except:
+#    - master
