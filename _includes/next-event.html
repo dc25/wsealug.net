@@ -4,13 +4,13 @@
   </div>
 
   <script>
-  function loadMeetupData(){
+  function loadMeetupData(meetingDate){
       var $embed = $('#meetup-embed');
       var nextMeetup = {
           link: "https://www.google.com/maps/place/Fauntleroy+YMCA/@47.521156,-122.389295,17z/data=!3m1!4b1!4m5!3m4!1s0x5490414fb8a861d7:0x6ca15b638e3b0668!8m2!3d47.521156!4d-122.387101",
           name: "Lean Coffee Style Discussion",
       };
-      var date = "January 4, 9:00 AM";
+      var date = meetingDate
       venue = {
           name: "Fauntleroy YMCA, West Seattle",
           address_1: "9140 California Ave SW",
@@ -31,5 +31,11 @@
       $embed.append(summary);
     }
   </script>
-  <script>loadMeetupData() </script>
+  <script src={{ site_prefix | append:'/assets/js/getEvent.js' }} type="text/javascript"></script> 
+  <script>getEvent('https://gettogether.community/team/1318/events.ics', loadMeetupData);</script> 
+
 </div>
+
+
+
+
