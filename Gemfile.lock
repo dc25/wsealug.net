@@ -96,6 +96,3 @@ DEPENDENCIES
   s3_website
   therubyracer
   tzinfo-data
-
-BUNDLED WITH
-  2.0.3
