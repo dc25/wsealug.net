@@ -27,7 +27,7 @@ nav:
   - name: Home
     url: /
   - name: Code of Conduct
-    url: https://gitlab.com/wsealug/wsealug/blob/master/code_of_conduct.md
+    url: https://gitlab.com/wsealug/wsealug/blob/main/code_of_conduct.md
   - name: GetTogether
     url: https://gettogether.community/wsealug/
   - name: IRC
