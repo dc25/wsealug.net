@@ -32,12 +32,12 @@ nav:
     url: https://gettogether.community/wsealug/
   - name: IRC
     url: https://webchat.freenode.net/#wsealug
-  - name: Slack
-    url: https://wsealug.slack.com/
+  - name: Elements/Matrix
+    url: https://element.seattlematrix.org/
   - name: Gitlab
     url: https://gitlab.com/wsealug
-  - name: Trello
-    url: https://trello.com/b/duBE2Tpr/wsealug
+  - name: Wekan
+    url: https://wekan.seattlematrix.org/b/7m2fvvjftavo8qTpn/wsealug
 
 #meetup-name: wsealug
 
